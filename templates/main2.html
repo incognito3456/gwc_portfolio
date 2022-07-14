@@ -1,0 +1,92 @@
+{% extends 'layout.html' %}
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex flex-column h-100">
+<!--    <div class="pl-4 pt-3 pb-4 bg-danger text-center">-->
+<!--        <h2 class="ml-3 text-center text-light py-4">Add a product</h2>-->
+<!--    </div>-->
+    <div class="topnav d-flex align-items-center justify-content-center">
+        <h5 class="pt-4 pb-4 pr-4 pl-4" style="font-weight: 400; opacity:0.9;">Home</h5>
+        <h5 class="pt-4 pb-4 pr-4 pl-4" style="font-weight: 400; opacity:0.9;">About</h5>
+        <h5 class="pt-4 pb-4 pr-4 pl-4" style="font-weight: 400; opacity:0.9;">Projects</h5>
+        <h5 class="pt-4 pb-4 pr-4 pl-4" style="font-weight: 400; opacity:0.9;">Contact</h5>
+<!--        <a href="#contact">Contact</a>-->
+<!--        <a href="#about">About</a>-->
+<!--        <a class="active" href="#home">Home</a>-->
+    </div>
+    <style>
+    .add-panel{
+        background-image:url('../static/add-items-page-bg.jpg');
+        background-size:100%;
+        opacity:.3;
+
+    }
+    body, html{
+        background-image:url('../static/desc.png');
+        /*background-repeat: no-repeat;*/
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        /*height:100%;*/
+        background-size:100%;
+    }
+    /* Add a white background color to the top navigation */
+    .topnav {
+      /*box-shadow: 5px 5px 9px 2px #99b4c2;*/
+      opacity: 0.5;
+      /*background-color: #B1D7E9;*/
+      background-color: #FFFFFF;
+      overflow: hidden;
+    }
+    /* Style the links inside the navigation bar */
+    .topnav h5 {
+      opacity: 0.3;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav h5:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav h5.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+    }
+    </style>
+    <div class="pl-3 pt-3 pb-4 container add-panel centered flex-fill">
+
+
+
+    </div>
+    <div class="pl-3 pt-3 pb-4 container ">
+
+        <h1>hey</h1>
+
+    </div>
+</div>
+{% endblock %}

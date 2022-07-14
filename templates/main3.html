@@ -1,0 +1,232 @@
+{% extends 'layout.html' %}
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+<div class="d-flex flex-column h-100">
+
+    <div class="topnav d-flex align-items-center justify-content-center">
+        <a href="#home"><h5 class="pt-4 pb-4 pr-4 pl-4" style="color: #424242; font-weight: 400; opacity:0.9;">Home</h5></a>
+        <a href="#about-me"><h5 class="pt-4 pb-4 pr-4 pl-4" style="color: #424242; font-weight: 400; opacity:0.9;">About</h5></a>
+        <a href="#work"><h5 class="pt-4 pb-4 pr-4 pl-4" style="color: #424242; font-weight: 400; opacity:0.9;">Work</h5></a>
+        <a href="#contact"><h5 class="pt-4 pb-4 pr-4 pl-4" style="color: #424242; font-weight: 400; opacity:0.9;">Contact</h5></a>
+
+    </div>
+    <style>
+
+    .middle {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Add a white background color to the top navigation */
+    .topnav {
+      /*box-shadow: 5px 5px 9px 2px #99b4c2;*/
+      opacity: 0.5;
+      /*background-color: #B1D7E9;*/
+      background-color: #FFFFFF;
+      overflow: hidden;
+    }
+    /* Style the links inside the navigation bar */
+    .topnav h5 {
+      opacity: 0.3;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: right;
+      color: #D28291;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav h5:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav h5.active {
+      background-color: #000000;
+      color: white;
+    }
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: black;
+    }
+    input:focus {
+        outline: 2px #3E7652 solid;
+        border-color: #719ECE;
+
+    }
+    textarea:focus {
+        outline: 2px #3E7652 solid;
+        border-color: #719ECE;
+
+    }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .green-gradient-text {
+        background-color: #f3ec78;
+        background-image: linear-gradient(45deg, #badba0, #7e9c67);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+    .blue-gradient-text {
+        background-color: #cfcfcf;
+        background-image: linear-gradient(45deg, #83abcc, #3C6383);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+    .orange-gradient-text {
+        background-color: #cfcfcf;
+        background-image: linear-gradient(45deg, #f7c083, #d6760d);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+    </style>
+    <div class=" middle container " style="padding-left:60px;padding-right:50px;padding-bottom:50px;">
+        <img width="1100" src="../static/description.png">
+    </div>
+
+    <p id="home" class="text-light" style="position: absolute; top: 0%; left: 85%;">hi</p>
+    <p id="about-me" class="text-light" style="position: absolute; top: 83%; left: 85%;">hi</p>
+    <div class="middle d-flex align-items-center justify-content-center" >
+        <img width="500" src="../static/pic.png" >
+        <h5 class="col-4" style="padding-left:50px;font-weight:300;">As a person with an innate eye for aesthetics, a knack for programming, and an aptitude for logistics, it was only natural for me to assume an interest in UI/UX design. Since I wanted to become more acquainted with UI/UX design, I started off by building a very messy UI creation for a hackathon, in which I used a strikingly bright color scheme and a very blocky user interface. However, since that misfortune, I have taken the initiative to augment my skills by researching techniques on various different platforms, practicing building sample interfaces on Figma, and venturing out for design positions.</h5>
+        <img width="140" src="../static/right-decor.png" style="position: absolute; top: 105%; left: 85%;">
+        <img width="120" src="../static/left-decor.png" style="position: absolute; top: 105%; left: 6%;">
+    </div>
+
+    <p id="work" class="text-light" style="position: absolute; top: 173%; left: 85%;">hi</p>
+    <div style="background-color:#FFFFFF;position: absolute; top: 175%; left: 20%;" >
+        <div>
+            <img width="200" class="pt-4 pb-4" style="padding-top:80px;position: absolute; top: 0%; left: 30%;" src="../static/work-label.png" >
+            <div class="d-flex" style="padding-bottom:60px;padding-top:150px;">
+                <div class="col-4 pr-4">
+                    <div class="py-2 d-flex align-items-center">
+<!--                        <span class="material-icons mt-1 mb-1 mr-2 ml-3 md-dark md-24"-->
+<!--                                          style="color:#FFFFFF;">person</span>-->
+                        <i class="pt-3 fa fa-gear" style="font-size:30px;color:#79A0C1;"></i>
+                        <h3 class="blue-gradient-text pl-2" style="padding-top:20px;font-weight:400;text-decoration:underline;">GeoRepair</h3>
+                    </div>
+                    <h4 class="pl-2" style="font-style: italic;padding-top:8px;font-weight:400;">UI/UX Design</h4>
+                    <h5 class="pl-2 pr-3 pt-3 pb-3 text-secondary" style="font-weight:300;">As the UI/UX designer of this project, my job was to create the mobile and web design of GeoRepair, which is an application that uses a camera to scan objects on the streets, calculates the level of damage to the object, and determines whether or not the object is in need of immediate repair.</h5>
+                </div>
+                <a href="https://tvisharanjan.wixsite.com/portfolio/projects-6" target="_blank"><img width="500" style="border-radius: 15px; box-shadow: 0px 3px 10px 2px #c2c2c2;" src="../static/georepair-cover.png" ></a>
+            </div>
+            <div class="d-flex" style="padding-bottom:60px;">
+                <div class="col-4 pr-4">
+                    <div class="py-2 d-flex align-items-center">
+<!--                        <span class="material-icons mt-1 mb-1 mr-2 ml-3 md-dark md-24"-->
+<!--                                          style="color:#FFFFFF;">person</span>-->
+                        <i class=" fa fa-instagram" style="padding-top:15px; font-size:30px;color:#B1D197;"></i>
+                        <h3 class="green-gradient-text pl-2" style="padding-top:20px;font-weight:400;text-decoration:underline;">Fibrux Posts</h3>
+                    </div>
+
+                    <h4 class="pl-2" style="font-style: italic;padding-top:8px;font-weight:400;">Graphic Design</h4>
+                    <h5 class="pl-2 pr-3 pt-3 pb-3 text-secondary" style="font-weight:300;">As a graphic designer in an India-based web design startup called Fibrux, I have designed posts for their Instagram page. The posts that I have created have accumulated over 100 likes in total.</h5>
+                </div>
+                <a href="https://www.instagram.com/p/CYn3qRGJiG9/" target="_blank"><img width="500" style="border-radius: 15px; box-shadow: 0px 3px 10px 2px #c2c2c2;" src="../static/fibrux-cover.png" ></a>
+
+            </div>
+            <div class="d-flex pb-4">
+                <div class="col-4 pr-4">
+                    <div class="py-2 d-flex align-items-center">
+<!--                        <span class="material-icons mt-1 mb-1 mr-2 ml-3 md-dark md-24"-->
+<!--                                          style="color:#FFFFFF;">person</span>-->
+                        <i class="pt-4 fa fa-code" style="font-size:30px;color:#F4B776;"></i>
+                        <h3 class="orange-gradient-text pl-2" style="padding-top:30px;font-weight:400;text-decoration:underline;">Abubble</h3>
+                    </div>
+                    <h4 class="pl-2" style="font-style: italic;padding-top:8px;font-weight:400;">Web Development</h4>
+                    <h5 class="pl-2 pr-3 pt-3 pb-3 text-secondary" style="font-weight:300;">I recently finished developing my own social media application, Abubble, with the mentorship of my coding teachers. It has been deployed on the internet, and I'm hoping to augment it further.</h5>
+                </div>
+                <a href="https://abubble.herokuapp.com/" target="_blank"><img width="500" style="border-radius: 15px; box-shadow: 0px 3px 10px 2px #c2c2c2;" src="../static/abubble-cover.png" ></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <p id="contact" class="text-light" style="position: absolute; top: 378%; left: 85%;">hi</p>
+    <div>
+        <div class=" row align-items-center justify-content-center" style="background-color:#edf5f0; border-radius: 25px; width:50%; height:450px; position: absolute; top: 395%; left: 28%;">
+            <div class="m-4 ">
+                <h1 class="pl-2 pb-3" style="color:#3E7652; font-family: 'Playfair Display', serif;">Get in touch!</h1>
+                <form id="fcf-form-id" class="col-12 fcf-form-class" method="post" action="contact-form-process.php">
+                    <div class="d-flex">
+                        <div class="pr-5">
+                            <div class="fcf-form-group">
+                                <label style="color:#3E7652; font-weight:400;" for="Name" class="pb-0 fcf-label">First Name</label>
+                                <div class="fcf-input-group" style="padding-bottom:20px;">
+                                    <input size="25" type="text" id="Name" name="Name" class=" fcf-form-control" style="border-radius:7px; background-color:#C8D7C9; border:none; height:35px;" required>
+                                </div>
+                            </div>
+
+                            <div class="fcf-form-group">
+                                <label style="color:#3E7652;" for="Email" class="fcf-label">Email *</label>
+                                <div class="fcf-input-group" style="padding-bottom:20px;">
+                                    <input size="25" type="email" id="Email" name="Email" class="fcf-form-control" style="border-radius:7px; background-color:#C8D7C9; border:none; height:35px;" required>
+                                </div>
+                            </div>
+
+                            <div class="fcf-form-group">
+                                <label style="color:#3E7652;" for="Message" class="fcf-label">Phone Number</label>
+                                <div class="fcf-input-group" style="padding-bottom:20px;">
+                                    <input size="25" type="email" id="Email" name="Email" class="fcf-form-control" style="border-radius:7px; background-color:#C8D7C9; border:none; height:35px;" required>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div >
+                            <div class="fcf-form-group">
+                                <label style="color:#3E7652; font-weight:400;" for="Name" class="pb-0 fcf-label">Last Name</label>
+                                <div class="fcf-input-group " style="padding-bottom:20px;">
+                                    <input size="25" type="text" id="Name" name="Name" class=" fcf-form-control" style="border-radius:7px; background-color:#C8D7C9; border:none; height:35px;" required>
+                                </div>
+                            </div>
+
+                            <div class="fcf-form-group">
+                                <label style="color:#3E7652;" for="Message" class="fcf-label">Message</label>
+                                <div class="fcf-input-group">
+                                    <textarea  style="border-radius:7px; background-color:#C8D7C9; border:none; height:123px; width:215px;" id="Message" name="Message" class="fcf-form-control" rows="4" maxlength="3000" required></textarea>
+                                </div>
+                            </div>
+                    </div>
+                </form>
+            </div>
+            <div class="fcf-form-group">
+                <button style="width:70%; margin-left:75px; margin-top:15px;  margin-bottom:135px;  border-radius:7px; background-color:#3E7652;" type="submit" id="fcf-button" class="btn btn-primary">Send Message</button>
+            </div>
+        </div>
+
+    </div>
+    <img width="170" src="../static/right-plane.png" style="position: absolute; top: 425%; left: 80%;">
+    <img width="165" src="../static/left-plane.png" style="position: absolute; top: 405%; left: 9%;">
+
+
+
+</div>
+
+{% endblock %}
+
